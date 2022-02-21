@@ -1,0 +1,55 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body background="camera.jpg">
+    <div class="container">
+    <center>
+        <a href="image" id="link" download="th.jpg"></a>
+        <h1>Voice Selfie App 
+        <img src="th.jpg" id="logo_img">
+        </h1>
+        <hr>
+       
+        
+        <div class="form-group">
+            <h3>Say "take my selfie" BY CLICKING ON THE START BUTTON</h3>
+            <label>Your voice output : </label>
+            <textarea class="form-control" id="textbox" readonly = "true"></textarea>
+            
+
+        </div>
+
+        <p>Press the Start button</p>
+        <button class="btn btn-warning" id="start-btn" onclick="startb()"> START </button>
+        <br>
+        <br>
+        <label>Your webcam : </label>
+        <div id="camera">
+
+        </div>
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <div id="result">
+            
+        </div>
+        <br>
+        <br>
+        <button onclick="take_snapshot();" class="btn btn-danger"> SNAPSHOT </button>
+        <button onclick="save();" class="btn btn-success"> SAVE </button>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
